@@ -28,7 +28,7 @@ export async function createEvent(app: FastifyInstance) {
 
       const slug = generateSlug(title);
 
-      const eventWithSameSlug = await prisma.events.findUnique({
+      const eventWithSameSlug = await prisma.event.findUnique({
         where: {
           slug,
         },
@@ -39,7 +39,7 @@ export async function createEvent(app: FastifyInstance) {
         throw new Error("Another event with same title already exists.");
       }
 
-      const event = await prisma.events.create({
+      const event = await prisma.event.create({
         data: {
           title,
           details,
