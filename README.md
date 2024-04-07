@@ -1,6 +1,6 @@
 # pass.in
 
-O pass.in é uma aplicação de **gestão de participantes em eventos presenciais**. 
+O pass.in é uma aplicação de **gestão de participantes em eventos presenciais**.
 
 A ferramenta permite que o organizador cadastre um evento e abra uma página pública de inscrição.
 
@@ -14,7 +14,7 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 
 - [ ] O organizador deve poder cadastrar um novo evento;
 - [ ] O organizador deve poder visualizar dados de um evento;
-- [ ] O organizador deve poser visualizar a lista de participantes; 
+- [ ] O organizador deve poser visualizar a lista de participantes;
 - [ ] O participante deve poder se inscrever em um evento;
 - [ ] O participante deve poder visualizar seu crachá de inscrição;
 - [ ] O participante deve poder realizar check-in no evento;
@@ -81,7 +81,7 @@ CREATE UNIQUE INDEX "attendees_event_id_email_key" ON "attendees"("event_id", "e
 CREATE UNIQUE INDEX "check_ins_attendeeId_key" ON "check_ins"("attendeeId");
 ```
 
-### Anotações
+## Anotações
 
 Métodos HTTP: GET, POST, PUT, DELETE, PATCH, HEAD,OPTIONS...
 
@@ -95,4 +95,11 @@ Semânticos == Significado
 Drivers nativos | Query Builders | ORM's
 
 Object Relational Mapping (Hibernate / Doctrine / ActiveRecord / Sequelize / Prisma / Drizzle (Cai na mesma ideia do "Bun", muito embrionário))
-Automatiza vários processos do banco de dados ao mesmo tempo, adiciona o versionamento do banco de dados (migration).
+Os ORM's automatizam vários processos do banco de dados ao mesmo tempo, adicionam também o versionamento do banco de dados (migration).
+
+JSON = JavaScript Object Notation
+
+20x => Success
+30x => Redirecionamento
+40x => Erro do cliente (Erro em alguma informação enviada por QUEM está fazendo a chamada p/ API)
+50x => Erro do servidor (Um erro que está acontecendo INDEPENDENTE do que está sendo enviado p/ o servidor)
