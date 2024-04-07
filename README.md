@@ -80,3 +80,19 @@ CREATE UNIQUE INDEX "attendees_event_id_email_key" ON "attendees"("event_id", "e
 -- CreateIndex
 CREATE UNIQUE INDEX "check_ins_attendeeId_key" ON "check_ins"("attendeeId");
 ```
+
+### Anotações
+
+Métodos HTTP: GET, POST, PUT, DELETE, PATCH, HEAD,OPTIONS...
+
+Corpo da requisição
+Parâmetros de busca (Search Params / Query params) `http://localhost:3333/users?name=kauan`
+Parâmetros de rota (Route params) -> Identificação de recursos `DELETE http://localhost:3333/users/5`
+Cabeçalhos (Headers) -> Enviar algo como contexto da requisição
+
+Semânticos == Significado
+
+Drivers nativos | Query Builders | ORM's
+
+Object Relational Mapping (Hibernate / Doctrine / ActiveRecord / Sequelize / Prisma / Drizzle (Cai na mesma ideia do "Bun", muito embrionário))
+Automatiza vários processos do banco de dados ao mesmo tempo, adiciona o versionamento do banco de dados (migration).
