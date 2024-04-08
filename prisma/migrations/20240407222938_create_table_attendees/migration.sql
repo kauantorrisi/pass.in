@@ -1,9 +1,3 @@
-/*
-  Warnings:
-
-  - You are about to drop the column `maximumAttendees` on the `events` table. All the data in the column will be lost.
-
-*/
 -- CreateTable
 CREATE TABLE "attendees" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,

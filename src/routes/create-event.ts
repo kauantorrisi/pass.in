@@ -9,14 +9,16 @@ export async function createEvent(app: FastifyInstance) {
     "/events",
     {
       schema: {
-        // Como quero receber do front-end
+        summary: "Create an event",
+        tags: ["events"],
+        // Como quero receber do front (request body)
         body: z.object({
           title: z.string().min(4),
           details: z.string().nullable(),
           maximumAttendees: z.number().int().positive().nullable(),
         }),
         response: {
-          // Como vou passar as respostas par ao front
+          // Como vou passar as respostas para o front (reply)
           201: z.object({
             eventId: z.string().uuid(),
           }),
@@ -48,7 +50,7 @@ export async function createEvent(app: FastifyInstance) {
         },
       });
 
-      reply.status(201).send({ eventId: event.id });
+      return reply.status(201).send({ eventId: event.id });
     }
   );
 }
