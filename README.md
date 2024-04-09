@@ -8,6 +8,8 @@ Os participantes inscritos podem emitir uma credencial para check-in no dia do e
 
 O sistema fará um scan da credencial do participante para permitir a entrada no evento.
 
+<strong>Esse repositório é apenas o back-end desta aplicação.</strong>
+
 ## Requisitos
 
 ### Requisitos funcionais
