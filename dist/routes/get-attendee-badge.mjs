@@ -1,8 +1,8 @@
 import {
   getAttendeeBadge
-} from "../chunk-SQ4AKTVL.mjs";
+} from "../chunk-TQMNHAEA.mjs";
 import "../chunk-JRO4E4TH.mjs";
-import "../chunk-JV6GRE7Y.mjs";
+import "../chunk-P56FXF2G.mjs";
 export {
   getAttendeeBadge
 };

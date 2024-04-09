@@ -14,6 +14,7 @@ import fastifySwagger from "@fastify/swagger";
 import fastifySwaggerUi from "@fastify/swagger-ui";
 import { errorHandler } from "./error-handler";
 import fastifyCors from "@fastify/cors";
+import { getAllEvents } from "./routes/get-all-events";
 
 const app = fastify();
 
@@ -48,6 +49,7 @@ app.register(getEvent);
 app.register(getAttendeeBadge);
 app.register(checkIn);
 app.register(getEventAttendees);
+app.register(getAllEvents);
 
 app.setErrorHandler(errorHandler);
 

@@ -1,27 +1,30 @@
 import {
+  getEventAttendees
+} from "./chunk-K2XFZTDD.mjs";
+import {
+  getEvent
+} from "./chunk-PZ4YIDFH.mjs";
+import {
   registerForEvent
-} from "./chunk-UAFFITP4.mjs";
+} from "./chunk-QPG3MVFQ.mjs";
 import {
   errorHandler
 } from "./chunk-QNIMVJBQ.mjs";
 import {
   checkIn
-} from "./chunk-DVRWMV3O.mjs";
+} from "./chunk-GULVP6QJ.mjs";
 import {
   createEvent
-} from "./chunk-JHBY2NSX.mjs";
+} from "./chunk-FO7XG7LF.mjs";
 import "./chunk-3VNS3LNG.mjs";
 import {
+  getAllEvents
+} from "./chunk-WGXIDSAZ.mjs";
+import {
   getAttendeeBadge
-} from "./chunk-SQ4AKTVL.mjs";
-import {
-  getEventAttendees
-} from "./chunk-RI7PNYWO.mjs";
-import {
-  getEvent
-} from "./chunk-5EPCSY3M.mjs";
+} from "./chunk-TQMNHAEA.mjs";
 import "./chunk-JRO4E4TH.mjs";
-import "./chunk-JV6GRE7Y.mjs";
+import "./chunk-P56FXF2G.mjs";
 
 // src/server.ts
 import fastify from "fastify";
@@ -61,6 +64,7 @@ app.register(getEvent);
 app.register(getAttendeeBadge);
 app.register(checkIn);
 app.register(getEventAttendees);
+app.register(getAllEvents);
 app.setErrorHandler(errorHandler);
 app.listen({ port: 3333, host: "0.0.0.0" }).then(() => {
   console.log("\u{1F525} HTTP server is running");

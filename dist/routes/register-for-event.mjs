@@ -1,8 +1,8 @@
 import {
   registerForEvent
-} from "../chunk-UAFFITP4.mjs";
+} from "../chunk-QPG3MVFQ.mjs";
 import "../chunk-JRO4E4TH.mjs";
-import "../chunk-JV6GRE7Y.mjs";
+import "../chunk-P56FXF2G.mjs";
 export {
   registerForEvent
 };
